@@ -1,0 +1,155 @@
+@import url(./root.css);
+@import url(./fronts.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.bosh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-easy h4 {
+    color: var(--greyColor);
+    font-size: 20px;
+    width: 168px;
+    height: 36px;
+}
+.book-easy h2 {
+    color: var(--h2Color);
+    width: 440px;
+    height: 172px;
+    font-size: 50px;
+}
+.next {
+    color: var(--greyColor);
+    gap: 45px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.next-trip {
+    display: flex;
+}
+.next p {
+    width: 435px;
+    height: 52px;
+    font-size: 21px;
+}
+.next h3 {
+    height: 26px;
+    font-size: 21px;
+}
+.greece {
+    position: relative;
+    border-radius: 31px;
+    width: 500px;
+    height: 450px;
+    box-shadow: 30px -20px 86px 20px rgba(0, 213, 255, 0.67);
+    -webkit-box-shadow: 30px -20px 86px 20px rgba(0, 213, 255, 0.67);
+    -moz-box-shadow: 30px -20px 86px 20px rgba(0, 213, 255, 0.67);
+}
+.greece-img {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 25px;
+    width: 426px;
+}
+.greece h3 {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+.greece-img1 {
+    position: absolute;
+    top: 350px;
+    left: 40px;
+}
+@media (max-width:800px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .bosh {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .book-easy h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .greece {
+        width: 300px;
+        height: 350px;
+        box-shadow: none;
+        border: 1px solid navajowhite;
+    }
+    .greece h3 {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+    .greece-img1 {
+        position: absolute;
+        top: 250px;
+        left: 50px;
+    }
+    .greece-img {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        width: 200px;
+    }
+}
+@media (max-width:414px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .bosh {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .book-easy h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .greece {
+        width: 200px;
+        height: 350px;
+        box-shadow: none;
+        border: 1px solid navajowhite;
+    }
+    .greece h3 {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+    .greece-img1 {
+        width: 150px;
+        position: absolute;
+        top: 250px;
+        left: 18px;
+    }
+    .greece-img {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        width: 150px;
+    }
+}
